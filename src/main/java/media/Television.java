@@ -40,8 +40,8 @@ public class Television {
         return this.turnOn;
     }
     
-    public void setTurnOn(int newTurnOn){
-        this.currentProgram = newTurnOn;
+    public void setTurnOn(boolean newTurnOn){
+        this.turnOn = newTurnOn;
     }
     
     public void printInfo() {
