@@ -14,6 +14,12 @@ public class Television {
     private int currentProgram = 1;
     private boolean turnOn = false;
     
+    public Television(int volume, int currentProgram, boolean turnOn){
+        this.volume = volume;
+        this.currentProgram = currentProgram;
+        this.turnOn = turnOn;
+    }
+    
     public int getVolume(){
         return this.volume;
     }
@@ -33,8 +39,15 @@ public class Television {
     public boolean getTurnOn(){
         return this.turnOn;
     }
+    
     public void setTurnOn(int newTurnOn){
         this.currentProgram = newTurnOn;
     }
     
+    public void printInfo() {
+        System.out.println("Ukljucen: " + this.turnOn);
+        System.out.println("Zvuk je na: " + this.volume);
+        System.out.println("Trenutni program: " + this.currentProgram);
+        System.out.println(" ");
+    }
 }
